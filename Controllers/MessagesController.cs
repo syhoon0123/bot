@@ -26,7 +26,7 @@ namespace hello_world
                 int length = (activity.Text ?? string.Empty).Length;
 
                 // return our reply to the user
-                Activity reply = activity.CreateReply($"Hey!,You sent {activity.Text} which was {length} characters");
+                Activity reply = activity.CreateReply($"Hey!!,You sent {activity.Text} which was {length} characters");
                 await connector.Conversations.ReplyToActivityAsync(reply);
             }
             else
